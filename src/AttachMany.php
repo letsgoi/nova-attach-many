@@ -141,7 +141,7 @@ class AttachMany extends Field
         return $this;
     }
 
-    public function resolve($resource, $attribute = null)
+    public function resolve($resource, ?string $attribute = null): void
     {
         $this->withMeta([
             'height' => $this->height,
